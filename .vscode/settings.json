@@ -10,7 +10,7 @@
   //? Language Specific Settings
   // =====================
   "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
@@ -31,11 +31,11 @@
     "editor.tabSize": 2,
     "editor.autoIndent": "keep",
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.defaultFormatter": "kennylong.kubernetes-yaml-formatter",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "kennylong.kubernetes-yaml-formatter"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // =====================
   //? Editor Settings
@@ -50,7 +50,7 @@
   "editor.formatOnSaveMode": "file", // required to format on save
   "vs-code-prettier-eslint.prettierLast": false, // set as "true" to run 'prettier' last not first
   "editor.lineHeight": 20,
-  "editor.defaultColorDecorators": true,
+  "editor.defaultColorDecorators": "auto",
   "editor.insertSpaces": false,
   "editor.tabSize": 4,
   "editor.detectIndentation": true,
@@ -169,5 +169,8 @@
     "**/allure-results/**": true,
     "**/allure-report/**": true,
     "**/reports/**": true
-  }
+  },
+  "python.testing.pytestArgs": ["tests"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
 }
